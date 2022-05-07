@@ -93,3 +93,44 @@ function addThreeYears(age) {
 
 addThreeYears(freddyAge)
 addThreeYears(tinaAge)
+
+
+let nums = [0, 1, 2, 3, 4, 5]
+let value = "false"
+
+for (let i = 0; i < nums.length; i++) {
+    // this ^ creates a for loop and assigns i to 0 index in array 'nums'
+    for (let a = 0; a < nums.length; a++ ) {
+        //this^ creates another for loop that assigns a to 0 index in array 'nums'
+        // you need two for loops because you are checking if the sum of two numbers is 0
+        if (i !== a){
+            // ^this creates a if statement in the second for loop that triggers if i and a are not the same number
+            if (nums[i] + nums[a] === 0) {
+                //^ this is triggered if i and a have the sum of 0 if added up
+                value = "True"
+            }
+        }
+    }
+}
+console.log(value)
+
+
+let words = 'red green blue purple black red'
+wordsArray = words.split(' ')
+console.log(wordsArray)
+ 
+let wordsValue = 'words dont match'
+
+for (let i = 0; i < wordsArray.length; i++) {
+    for (let j = 0; j < wordsArray.length; j++) {
+        if (i !== j) {
+        if (wordsArray[i] === wordsArray[j]) {
+        
+            wordsValue = 'words match'
+        }
+    }
+    }
+}
+console.log(wordsValue)
+
+
