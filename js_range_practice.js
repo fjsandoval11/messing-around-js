@@ -59,8 +59,37 @@ switch (daily) {
 
 }
 
-let week = ['monday','tuesday','wednesday','thursday','friday']
+let week = 'Monday tuesday wednesday thursday friday'
+let weekArray = week.split(' ')
 
-for (let i = 0; i < week.length; i++) {
-    console.log(`the day is ${week[i]}!`)
+for (let i = 0; i < weekArray.length; i++) {
+    console.log(`the day is ${weekArray[i]}!`)
 }
+
+let hungry = 'yes'
+hungry = Boolean(0)
+console.log(hungry)
+
+let crazyString = "chiiiicooo"
+crazyString = crazyString.toLocaleUpperCase()
+crazyString = crazyString.toLocaleLowerCase()
+
+console.log(crazyString)
+
+crazyString = "Yo Whats up fam do you like apples"
+let noA = crazyString.replaceAll('a','o')
+
+console.log(noA)
+
+
+freddyAge = 26
+tinaAge = 29
+
+
+function addThreeYears(age) {
+    age +=3
+    console.log(age)
+}
+
+addThreeYears(freddyAge)
+addThreeYears(tinaAge)
