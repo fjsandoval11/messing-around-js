@@ -19,17 +19,48 @@
 // console.log(sanityCheck)
 
 // answer for code challenge: find the range
-let array = [28, 43, -12, 30,4, 0,-36]
+// let array = [28, 43, -12, 30,4, 0,-36]
 
-let smallest = [0]
-let largest = [0]
+// let smallest = [0]
+// let largest = [0]
 
-for (let i = 0; i < array.length; i++) {
-    if (smallest > array[i]) {
-        smallest = array[i] 
-    } else if (largest < array[i]) {
-        largest = array[i]
-    }
+// for (let i = 0; i < array.length; i++) {
+//     if (smallest > array[i]) {
+//         smallest = array[i] 
+//     } else if (largest < array[i]) {
+//         largest = array[i]
+//     }
+// }
+
+// console.log(smallest, largest)
+
+let daily = "Wednesday"
+let message = " I do devMountain class"
+
+switch (daily) {
+    case 'Monday' :
+    console.log(`Monday's${message}`)
+    break
+
+    case 'Tuesday' : 
+    console.log(`Tuesday's${message}`)
+    break
+
+    case 'Wednesday':
+        console.log(`Wednesday's${message}`)
+    break 
+    
+    case 'Thursday' :
+        console.log(`Thursday's${message}`)
+        break
+    
+    case 'Friday' :
+        console.log(`Friday's${message}`)
+
 }
 
-console.log(smallest, largest)
+let week = ['monday','tuesday','wednesday','thursday','friday']
+
+for (let i = 0; i < week.length; i++) {
+    console.log(`the day is ${week[i]}!`)
+}
